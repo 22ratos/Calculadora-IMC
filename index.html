@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/muscle-yellow-emoji-1996x2048-42om1222.png">
+</head>
+<body>
+    <main>
+        <div class="container" id="container">
+            <div class="tittle" id="titulo">
+                <h1>Calculadora - IMC</h1>
+            </div>
+
+            <div class="input">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Ex: Lucas" autocomplete="off">
+            </div>
+
+            <div class="input">
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" placeholder="Ex: 1,80" autocomplete="off">
+            </div>
+
+            <div class="input">
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" placeholder="Ex: 58" autocomplete="off">
+            </div>
+
+            <button id="calcular">Calcular</button>
+            <div class="result" id="resultado"></div>
+        </div>
+    </main>
+
+    <!-- Inclua jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclua jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- Inclua seu script personalizado -->
+    <script src="calc.js"></script>
+</body>
+</html>
